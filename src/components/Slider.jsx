@@ -1,6 +1,6 @@
 import React, { useEffect,useState, useRef } from 'react'
 import { HiChevronRight, HiChevronLeft } from 'react-icons/hi'
-import globalapi from '../services/globalapi'
+import GlobalApi from '../Services/GlobalApi'
 
 const imageBaseUrl = "https://image.tmdb.org/t/p/original";
 const screenWidth=window.innerWidth;
