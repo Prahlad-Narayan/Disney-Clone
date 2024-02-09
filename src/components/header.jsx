@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/logo.svg';
 import {HiHome, HiMagnifyingGlass, HiStar, HiPlayCircle, HiTv} from 'react-icons/hi2';
 import { HiPlus,HiDotsVertical } from 'react-icons/hi';
 import HeaderItem from './headeritem';
@@ -36,7 +36,7 @@ function Header() {
     return (
         <div className='flex items-center justify-between p-5'>
             <div className='flex gap-8 item-center'>
-                <img src={logo} className='w-[80px] md:w-[115px] object-cover' />
+                <img src={logo} className='w-[50px] md:w-[80px] object-cover' />
                 <div className='hidden md:flex gap-8'>
                     {menu.map((item)=>(
                     <HeaderItem name={item.name} Icon={item.icon}/>

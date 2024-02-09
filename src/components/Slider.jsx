@@ -13,7 +13,7 @@ function Slider() {
     }, [])
 
     const getTrendingMovies=()=>{
-        globalapi.getTrendingVideos.then((res=>{
+        GlobalApi.getTrendingVideos.then((res=>{
             console.log(res)
             setMovieList(res.data.results)
         }))
